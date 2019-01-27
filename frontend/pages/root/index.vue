@@ -1,12 +1,13 @@
 <template lang="pug">
 #index
   App
-  p Index page
+  h1 Index page
   img(src='../../images/image.jpg')
-  a.button.is-primary.fas.fa-igloo Button
-  i.fas.fa-igloo Item
-  p.fas.fa-ad こんばんは
-  p.fas.fa-ad こんにちは
+  a.button.is-primary Bulma's Button
+  br
+  i.fas.fa-igloo FontAwesome Icon
+  br
+  p You can use Vue.js, Bulma, FontAwesome on Rails.
 </template>
 
 <style lang="scss">
@@ -14,6 +15,14 @@
 
 p {
   color: $base-color;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+img {
+  width: 100%;
 }
 </style>
 
