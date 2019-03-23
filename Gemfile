@@ -10,7 +10,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'cancancan'
-gem 'devise'
+gem 'devise', '>=4.6.0'
 gem 'dotenv-rails'
 gem 'haml-rails'
 gem 'rack-proxy'
