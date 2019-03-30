@@ -8,11 +8,12 @@ Qiitaに記事を投稿したので[こちら](https://qiita.com/geek_shanshan/i
 ## Tool
 
 - rbenv 1.1.1
-- ruby 2.5.1
-- yarn 1.10.1
+- Ruby 2.5.1
+- Rails 5.2.2
+- yarn 1.15.2
 - bundler 1.17.2
 - git
-- mysql 8.0.12
+- mysql 5.7.25
 - VSCode 拡張機能
   - rufo
   - eslint
@@ -34,3 +35,4 @@ $ bundle exec foreman start -p 3000 // port3000でrailsのサーバーとwebpack
 - ESlint + Prettierの組み合わせでVSCodeであれば保存時にフォーマットしてくれます。
 - webpack-dev-serverを利用して快適に開発できます。
 - fontawesome, bulma, vueが使えます。
+- Docker対応を進めていますが、docker-composeのMYSQL周りが解決できていないので使用しないでください。
