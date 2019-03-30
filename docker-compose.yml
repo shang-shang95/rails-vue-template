@@ -1,0 +1,29 @@
+version: '3'
+services:
+  rails:
+    build: .
+    command: bundle exec rails s
+    restart: always
+    stdin_open: true
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - mysql
+  # webpack:
+  #   build: .
+  #   command: yarn run ./node_modules/.bin/webpack-dev-server
+  #   volumes:
+  #     - .:/usr/src/app
+  #   ports:
+  #     - "8080:8080"
+  mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD:
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db/mysql/volumes:/var/lib/mysql
