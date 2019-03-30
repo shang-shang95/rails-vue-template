@@ -1,6 +1,4 @@
 .bundle/
 .vscode/
-node_modules/
-vendor/
 README.md
 .gitignore
