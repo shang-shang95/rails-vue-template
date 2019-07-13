@@ -7,8 +7,8 @@ services:
     stdin_open: true
     ports:
       - 3000:3000
-    volumes:
-      - .:/usr/src/app
+    # volumes:
+    #   - .:/usr/src/app
     depends_on:
       - mysql
   # webpack:
@@ -25,5 +25,5 @@ services:
       MYSQL_ROOT_PASSWORD:
     ports:
       - "3306:3306"
-    volumes:
-      - ./db/mysql/volumes:/var/lib/mysql
+    # volumes:
+    #   - ./db/mysql/volumes:/var/lib/mysql
